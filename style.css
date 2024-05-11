@@ -85,6 +85,7 @@
 }
 body {
   gap: 16rem;
+  width: 100vw;
   display: flex;
   margin: 0 auto;
   max-width: 1300px;
@@ -331,8 +332,7 @@ nav {
   margin-left: 1pc;
   margin-right: 1pc;
   text-align: center;
-  animation-name: slidein;
-  animation-duration: 1s;
+  animation: slidein 1s;
 }
 .head6 {
   color: #000;
@@ -350,8 +350,7 @@ nav {
   margin-left: 1pc;
   margin-right: 1pc;
   text-align: center;
-  animation-name: slidein;
-  animation-duration: 1s;
+  animation: slidein 1s;
 }
 .head7 {
   color: #000;
@@ -369,8 +368,7 @@ nav {
   margin-left: 1pc;
   margin-right: 1pc;
   text-align: center;
-  animation-name: slidein;
-  animation-duration: 1s;
+  animation: slidein 1s;
 }
 .head8 {
   color: #000;
@@ -388,8 +386,7 @@ nav {
   margin-left: 1pc;
   margin-right: 1pc;
   text-align: center;
-  animation-name: slidein;
-  animation-duration: 1s;
+  animation: slidein 1s;
 }
 .box3 {
   background: #7557fc;
@@ -401,7 +398,7 @@ nav {
   clip-path: circle(50px at 30%);
   top: 85pc;
   left: 8pc;
-  animation-name: rotate3 2s infinite both;
+  animation: rotate3 2s infinite both;
   transform-origin: center;
 }
 .box4 {
@@ -423,7 +420,6 @@ nav {
   font-size: 1.2em;
   font-weight: 700;
   margin: 0 0.4rem;
-  gap: 8px;
 }
 .section3 {
   background-color: #7557fc;
@@ -550,6 +546,8 @@ nav {
   height: 60vh;
 }
 .college6 {
+  display: flex;
+  flex-direction: column;
 }
 .box7 {
   background: #7557fc;
@@ -598,9 +596,8 @@ nav {
 }
 .icon {
   display: flex;
+  flex-direction: column;
   gap: 30px;
-  top: 48pc;
-  left: 1pc;
 }
 .mini-icon {
   color: #fff;
