@@ -1,0 +1,1156 @@
+@keyframes turn {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes rotate7 {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes wave {
+  from {
+    transform: rotateX(360deg);
+  }
+  to {
+    transform: rotateX(0);
+  }
+}
+@keyframes slideup {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes rotate5 {
+  from {
+    transform: rotateX(360deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes rotate6 {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(20deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes rotate2 {
+  from {
+    transform: rotateX(20deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes rotate3 {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate4 {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  gap: 16rem;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1300px;
+  flex-direction: column;
+  background-color: #fefefe;
+}
+header {
+  height: 20vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: #7557fc;
+}
+nav {
+  background: #fff;
+  margin: 30px;
+  width: 80vw;
+  border: 1px solid #5775fc;
+  border-radius: 30px;
+}
+.profile {
+  padding: 9px;
+  font-size: 2em;
+  color: #7557fc;
+  border-radius: 30px 10px;
+  border: 2px solid #7557fc;
+}
+.profile:hover {
+  background: #7557fc;
+  color: #fff;
+  transition: all 1s ease;
+}
+.ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+.li {
+  list-style-type: none;
+  display: flex;
+}
+.logo {
+  position: relative;
+  max-width: 100%;
+  clip-path: circle(20px);
+  width: 70px;
+}
+.link {
+  text-decoration: none;
+  color: #7557fc;
+  text-transform: uppercase;
+  transform: translateX(5px);
+}
+.link:hover {
+  background: #7557fc;
+  color: #fff;
+  padding: 20px;
+  border-radius: 50px;
+  transition: all 1s ease;
+}
+.heads {
+  color: #fff;
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: 300;
+  top: 7pc;
+  left: 25pc;
+  font-family: serif;
+  animation: turn 2s infinite;
+}
+.head {
+  animation-name: slideup;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 300;
+  position: absolute;
+  top: 800px;
+  left: 330px;
+  font-family: serif;
+}
+.box {
+  top: 200px;
+  left: 150px;
+  width: 20rem;
+  height: 20rem;
+  max-width: 100%;
+  overflow: scroll;
+  background: #fff;
+  position: absolute;
+  clip-path: circle(20%);
+  transform-origin: center;
+  background-size: content;
+  animation: rotate 3s infinite both;
+}
+.box2 {
+  background: #7557fc;
+  background-size: content;
+  position: absolute;
+  overflow: scroll;
+  max-width: 100%;
+  height: 20rem;
+  width: 20rem;
+  clip-path: circle(20%);
+  top: 200px;
+  left: 150px;
+  animation: rotate2 3s infinite both;
+  transform-origin: center;
+}
+.box-text {
+  color: #fff;
+  top: 530px;
+  left: 490px;
+  position: absolute;
+}
+.section1 {
+  background: #000;
+  min-width: 100%;
+  height: 90vh;
+}
+.college1 {
+  position: relative;
+}
+.head1 {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  font-size: 2.7em;
+  margin-top: 2pc;
+  font-weight: 700;
+  padding-top: 30px;
+}
+.border {
+  top: 2pc;
+  left: 3pc;
+  width: 55pc;
+  height: 41vw;
+  position: absolute;
+  perspective: 100px;
+  border: 1px solid #7557fc;
+}
+.boxes {
+  background: #7557fc;
+  position: absolute;
+  height: 2.5pc;
+  width: 50pc;
+  top: 10.3pc;
+  left: 2pc;
+  transform: rotateX(45deg);
+  animation-name: wave;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.text-1 {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-top: 20pc;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  text-align: center;
+}
+.college2 {
+  position: relative;
+}
+.head2 {
+  color: #fff;
+  font-size: 3em;
+  position: absolute;
+  top: 5pc;
+  left: 5pc;
+  display: flex;
+  gap: 10px;
+}
+.color {
+  color: #7557fc;
+}
+.line {
+  color: #fff;
+  position: absolute;
+  top: 10pc;
+  margin-left: 2pc;
+}
+.line li {
+  font-size: 1.5em;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  padding: 1pc;
+}
+.head3 {
+  color: #fff;
+  font-size: 3em;
+  position: absolute;
+  top: 42pc;
+  left: 5pc;
+  display: flex;
+  gap: 10px;
+}
+.college3 {
+  position: absolute;
+}
+.scroll-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.scroll-box {
+  display: inline-block;
+  justify-content: space-between;
+  position: absolute;
+  top: 50pc;
+}
+.sec {
+  display: inline-block;
+  position: relative;
+}
+.scroll-item {
+  position: relative;
+  height: 20pc;
+  width: 19pc;
+  border: 1px solid #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 1px 2px;
+}
+.d {
+  position: absolute;
+  color: #fff;
+  font-size: 1.1em;
+  white-space: normal;
+  left: 10px;
+  top: 21pc;
+  text-align: center;
+}
+.section2 {
+  background-color: #fff;
+  height: 100vh;
+  position: relative;
+}
+.college4 {
+  position: absolute;
+}
+.head4 {
+  color: #000;
+  font-size: 3em;
+  position: absolute;
+  top: 4pc;
+  left: 5px;
+  display: flex;
+  gap: 5px;
+}
+.text-2 {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-top: 12pc;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  text-align: center;
+}
+.head5 {
+  color: #000;
+  font-size: 3em;
+  position: absolute;
+  top: 23pc;
+  left: 5pc;
+  display: flex;
+  gap: 10px;
+}
+.text-3 {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-top: 8pc;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  text-align: center;
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+.head6 {
+  color: #000;
+  font-size: 3em;
+  position: absolute;
+  top: 40pc;
+  left: 5pc;
+  display: flex;
+  gap: 10px;
+}
+.text-4 {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-top: 8pc;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  text-align: center;
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+.head7 {
+  color: #000;
+  font-size: 3em;
+  position: absolute;
+  top: 60pc;
+  left: 5pc;
+  display: flex;
+  gap: 10px;
+}
+.text-5 {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-top: 8pc;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  text-align: center;
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+.head8 {
+  color: #000;
+  font-size: 3em;
+  position: absolute;
+  top: 79pc;
+  left: 5pc;
+  display: flex;
+  gap: 10px;
+}
+.text-6 {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-top: 8pc;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  text-align: center;
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+.box3 {
+  background: #7557fc;
+  color: #fff;
+  position: absolute;
+  overflow: scroll;
+  max-width: 100%;
+  height: 700px;
+  width: 700px;
+  clip-path: circle(50px at 30%);
+  top: 85pc;
+  left: 8pc;
+  animation-name: rotate3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: both;
+  transform-origin: center;
+}
+.box4 {
+  background: #000;
+  color: #fff;
+  position: absolute;
+  overflow: scroll;
+  max-width: 100%;
+  height: 300px;
+  width: 300px;
+  clip-path: circle(20%);
+  top: 97pc;
+  left: 21pc;
+  animation-name: rotate4;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: both;
+}
+.heads1 {
+  color: #000;
+  font-size: 1.2em;
+  font-weight: 700;
+  position: absolute;
+  top: 122pc;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  display: flex;
+  gap: 8px;
+}
+.section3 {
+  background-color: #7557fc;
+  height: 90vh;
+  position: relative;
+}
+.college5 {
+  position: relative;
+}
+.head9 {
+  color: #fff;
+  font-size: 2.5em;
+  position: absolute;
+  text-align: center;
+  top: 2pc;
+  left: 1pc;
+  right: 1pc;
+  display: block;
+  gap: 0px;
+}
+.color1 {
+  color: #000;
+}
+.head10 {
+  color: #fff;
+  font-size: 2.5em;
+  position: absolute;
+  top: 23pc;
+  left: 1pc;
+  display: flex;
+  gap: 10px;
+}
+.line1 {
+  color: #fff;
+  position: absolute;
+  top: 28pc;
+  margin-left: 2pc;
+}
+.line1 li {
+  font-size: 1.5em;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  padding: 1pc;
+}
+.head11 {
+  color: #fff;
+  font-size: 2.5em;
+  position: absolute;
+  top: 40pc;
+  left: 1pc;
+  display: flex;
+  gap: 10px;
+}
+.line2 {
+  color: #fff;
+  position: absolute;
+  top: 45pc;
+  margin-left: 2pc;
+}
+.line2 li {
+  font-size: 1.5em;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  padding: 1pc;
+}
+.text-7 {
+  color: #fff;
+  font-size: 2.1em;
+  font-weight: 500;
+  padding-top: 70pc;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.text-7.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.box5 {
+  background: #fff;
+  color: #fff;
+  position: absolute;
+  overflow: scroll;
+  max-width: 100%;
+  height: 300px;
+  width: 300px;
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+  top: 87pc;
+  left: 20pc;
+  right: 2pc;
+  animation-name: rotate5;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: both;
+  transform-origin: center;
+}
+.box6 {
+  background: #7557fc;
+  color: #fff;
+  position: absolute;
+  overflow: scroll;
+  max-width: 100%;
+  height: 260px;
+  width: 200px;
+  clip-path: polygon(100% 0%, 29% 51%, 100% 100%, 66% 100%, 0% 50%, 67% 1%);
+  top: 88.2pc;
+  left: 23pc;
+  animation-name: rotate6;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: both;
+}
+.footer {
+  background: #000;
+  height: 60vh;
+  position: relative;
+}
+.college6 {
+  position: relative;
+}
+.box7 {
+  background: #7557fc;
+  color: #fff;
+  position: absolute;
+  overflow: scroll;
+  max-width: 100%;
+  height: 200px;
+  width: 200px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  top: 2pc;
+  left: 24pc;
+  animation-name: rotate6;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: both;
+}
+.text-8 {
+  color: #fff;
+  font-size: 2.1em;
+  font-weight: 500;
+  padding-top: 30pc;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  position: absolute;
+  display: flex;
+  gap: 10px;
+}
+.call {
+  color: #7557fc;
+}
+.head12 {
+  color: #fff;
+  font-size: 2.5em;
+  position: absolute;
+  top: 40pc;
+  left: 1pc;
+}
+.icon {
+  position: absolute;
+  display: flex;
+  gap: 30px;
+  top: 48pc;
+  left: 1pc;
+}
+.mini-icon {
+  color: #fff;
+  font-size: 6em;
+}
+.mini-icon:hover {
+  color: #7557fc;
+  transition: transform 3s ease-in;
+}
+.text-9 {
+  color: #fff;
+  font-size: 2.1em;
+  font-weight: 500;
+  padding-top: 60pc;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  position: absolute;
+  display: flex;
+  gap: 10px;
+}
+.text-10 {
+  color: #fff;
+  font-size: 2.1em;
+  font-weight: 500;
+  padding-top: 70pc;
+  margin-left: 1pc;
+  margin-right: 1pc;
+  position: absolute;
+  display: flex;
+  gap: 10px;
+}
+/* Styles for phones
+@media only screen and (max-width: 767px) {
+  header {
+    height: 70vh;
+  }
+  nav {
+    position: absolute;
+    width: 22pc;
+    margin: 5px;
+  }
+  .ul {
+    margin-left: 0px;
+    position: relative;
+  }
+  .li {
+    position: relative;
+    justify-content: space-between;
+    padding: 13px;
+  }
+  .profile {
+    font-size: 1em;
+  }
+  .link {
+    font-size: 0.5em;
+    transform: none;
+  }
+  .link:hover {
+    background: #7557fc;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50px;
+    transition: 1s ease-in;
+  }
+  .heads {
+    font-size: 1em;
+    top: 5pc;
+    left: 7.5pc;
+  }
+  .box {
+    height: 300px;
+    width: 300px;
+    left: 2.2pc;
+    top: 6pc;
+  }
+  .box2 {
+    height: 300px;
+    width: 300px;
+    top: 1em;
+    left: 2.2pc;
+    top: 6pc;
+  }
+  .section1 {
+    position: relative;
+    height: 150vh;
+  }
+  .head {
+    font-size: 1em;
+    top: 25pc;
+    left: 4.5pc;
+  }
+  .head1 {
+    font-size: 1em;
+  }
+  .border {
+    height: 5pc;
+    width: 21pc;
+    left: 0.7pc;
+    top: 2.5pc;
+  }
+  .boxes {
+    height: 12px;
+    width: 21pc;
+    top: 5pc;
+    left: 0.1pc;
+  }
+  .text-1 {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 9pc;
+    margin-left: 1pc;
+    margin-right: 1pc;
+    text-align: center;
+  }
+  .head2 {
+    font-size: 1.2em;
+    position: absolute;
+    top: 0.8pc;
+    left: 1pc;
+    display: flex;
+    gap: 10px;
+  }
+  .line {
+    color: #fff;
+    position: absolute;
+    top: 3pc;
+    margin-left: 1pc;
+  }
+  .line li {
+    font-size: 1em;
+    margin-left: 1pc;
+    margin-right: 1pc;
+    padding: 0.5pc;
+  }
+  .head3 {
+    color: #fff;
+    font-size: 1.2em;
+    position: absolute;
+    top: 36pc;
+    left: 1pc;
+    display: flex;
+    gap: 10px;
+  }
+  .scroll-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .scroll-box {
+    display: inline-block;
+    position: absolute;
+    top: 40pc;
+  }
+  .sec {
+    display: inline-block;
+    position: relative;
+  }
+  .scroll-item {
+    position: relative;
+    height: 5pc;
+    width: 6pc;
+    border: 1px solid #fff;
+    left: 0.1pc;
+    right: 0.1px;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 1px 2px;
+  }
+  .d {
+    position: absolute;
+    color: #fff;
+    font-size: 0.1em;
+    white-space: normal;
+    left: 10px;
+    top: 6pc;
+    text-align: center;
+  }
+  .section2 {
+    height: 210vh;
+  }
+  .head4 {
+    font-size: 1.2em;
+    font-weight: 700;
+    position: absolute;
+    top: 2pc;
+    left: 1pc;
+    display: block;
+    text-align: center;
+    gap: 0px;
+  }
+  .text-2 {
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 8pc;
+    margin-left: 1pc;
+    margin-right: 1pc;
+    text-align: center;
+  }
+  .head5 {
+    color: #000;
+    font-size: 1.2em;
+    position: absolute;
+    top: 21pc;
+    left: 1pc;
+    display: flex;
+    gap: 7px;
+  }
+  .text-3 {
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 4pc;
+    margin-left: 1pc;
+    margin-right: 1pc;
+    text-align: center;
+  }
+  .head6 {
+    color: #000;
+    font-size: 1.2em;
+    position: absolute;
+    top: 36pc;
+    left: 1pc;
+    display: flex;
+    gap: 7px;
+  }
+  .text-4 {
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 4pc;
+    margin-left: 1pc;
+    margin-right: 1pc;
+    text-align: center;
+  }
+  .head7 {
+    color: #000;
+    font-size: 1.2em;
+    position: absolute;
+    top: 56pc;
+    left: 1pc;
+    display: flex;
+    gap: 7px;
+  }
+  .text-5 {
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 4pc;
+    margin-left: 1pc;
+    margin-right: 1pc;
+    text-align: center;
+  }
+  .head8 {
+    color: #000;
+    font-size: 1.2em;
+    position: absolute;
+    top: 74pc;
+    left: 1pc;
+    display: flex;
+    gap: 7px;
+  }
+  .text-6 {
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 4pc;
+    margin-left: 1pc;
+    margin-right: 1pc;
+    text-align: center;
+  }
+  .box4 {
+    background: #000;
+    color: #fff;
+    position: absolute;
+    overflow: scroll;
+    max-width: 100%;
+    height: 80px;
+    width: 90px;
+    clip-path: circle(20%);
+    top: 87pc;
+    left: 9pc;
+  }
+  .box3 {
+    background: #7557fc;
+    color: #fff;
+    position: absolute;
+    overflow: scroll;
+    max-width: 100%;
+    height: 100px;
+    width: 100px;
+    clip-path: circle(10px at 10%);
+    top: 86.5pc;
+    left: 8.5pc;
+    animation-name: rotate3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: both;
+    transform-origin: center;
+  }
+  .heads1 {
+    color: #000;
+    font-size: 0.7em;
+    font-weight: 700;
+    position: absolute;
+    top: 95pc;
+    display: flex;
+    flex-wrap: 2px;
+    gap: 0px;
+  }
+  .section3 {
+    height: 130vh;
+  }
+  .head9 {
+    color: #fff;
+    font-size: 1.2em;
+    position: absolute;
+    text-align: center;
+    top: 2pc;
+    left: 1pc;
+    right: 1pc;
+    display: block;
+    gap: 0px;
+  }
+  .head10 {
+    font-size: 1.2em;
+    position: absolute;
+    top: 10pc;
+    left: 1pc;
+    display: flex;
+    gap: 10px;
+  }
+  .line1 {
+    position: absolute;
+    top: 12pc;
+    margin-left: 1pc;
+  }
+  .line1 li {
+    font-size: 1em;
+    margin-left: 1pc;
+    margin-right: 1pc;
+    padding: 0.5pc;
+  }
+  .head11 {
+    font-size: 1.2em;
+    position: absolute;
+    top: 23pc;
+    left: 1pc;
+    display: flex;
+    gap: 10px;
+  }
+  .line2 {
+    position: absolute;
+    top: 25pc;
+    margin-left: 1pc;
+  }
+  .line2 li {
+    font-size: 1em;
+    margin-left: 1pc;
+    margin-right: 1pc;
+    padding: 0.5pc;
+  }
+  .text-7 {
+    position: absolute;
+    font-size: 1em;
+    font-weight: 500;
+    padding-top: 40pc;
+    margin-left: 1pc;
+    text-align: center;
+  }
+  .box5 {
+    background: #fff;
+    color: #fff;
+    position: absolute;
+    overflow: scroll;
+    max-width: 100%;
+    height: 100px;
+    width: 100px;
+    clip-path: polygon(
+      0% 15%,
+      15% 15%,
+      15% 0%,
+      85% 0%,
+      85% 15%,
+      100% 15%,
+      100% 85%,
+      85% 85%,
+      85% 100%,
+      15% 100%,
+      15% 85%,
+      0% 85%
+    );
+    top: 51pc;
+    left: 8pc;
+    animation-name: rotate5;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: both;
+    transform-origin: center;
+  }
+  .box6 {
+    background: #7557fc;
+    color: #fff;
+    position: absolute;
+    overflow: scroll;
+    max-width: 100%;
+    height: 90px;
+    width: 100px;
+    clip-path: polygon(100% 0%, 29% 51%, 100% 100%, 66% 100%, 0% 50%, 67% 1%);
+    top: 51.3pc;
+    left: 8pc;
+    animation-name: rotate6;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: both;
+  }
+  .footer {
+    height: 70vh;
+  }
+  .box7 {
+    background: #7557fc;
+    color: #fff;
+    position: absolute;
+    overflow: scroll;
+    max-width: 100%;
+    height: 100px;
+    width: 100px;
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+    top: 2pc;
+    left: 8pc;
+  }
+  .text-8 {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    padding-top: 10pc;
+    margin-left: 1pc;
+    margin-right: 1pc;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+  }
+  .head12 {
+    color: #fff;
+    font-size: 1.1em;
+    position: absolute;
+    top: 15pc;
+    left: 1pc;
+  }
+  .icon {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    top: 20pc;
+    left: 1pc;
+  }
+  .mini-icon {
+    color: #fff;
+    font-size: 2em;
+  }
+  .mini-icon:hover {
+    color: #7557fc;
+    transition: transform 3s ease-in;
+  }
+  .text-9 {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-top: 25pc;
+    margin-left: 1pc;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+  }
+  .text-10 {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-top: 30pc;
+    margin-left: 1pc;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+  }
+} */
