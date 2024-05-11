@@ -89,6 +89,7 @@ body {
   display: flex;
   margin: 0 auto;
   max-width: 1300px;
+  overflow-x: hidden;
   flex-direction: column;
   background-color: #fefefe;
 }
