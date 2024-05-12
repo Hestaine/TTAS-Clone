@@ -785,6 +785,9 @@ nav {
   .head1 {
     width: 21rem;
   }
+  .heads {
+    font-size: 2.1rem;
+  }
   .head,
   .head1 {
     font-size: 1.9rem;
@@ -860,10 +863,11 @@ nav {
 
 @media screen and (min-width: 1024px) {
   .head1::before {
-    left: -6.5rem;
+    left: -14.5rem;
   }
   .boxes {
-    left: -11rem;
+    width: 68.5vw;
+    left: -20rem;
   }
   .head1::before {
     top: -1.7rem;
@@ -882,7 +886,7 @@ nav {
     font-size: 2.5rem;
   }
   .text-p {
-    width: 50rem;
+    width: 65rem;
     line-height: 4rem;
   }
   .text-line {
@@ -892,6 +896,13 @@ nav {
     width: 40rem;
     font-size: 4.5rem;
     margin-top: 2.5rem;
+  }
+  .heads {
+    font-size: 2.1rem;
+  }
+  .head,
+  .head1 {
+    font-size: 1.9rem;
   }
   .head7,
   .head3,
@@ -904,7 +915,7 @@ nav {
     width: 30rem;
   }
   .d {
-    width: 35rem;
+    width: 30rem;
   }
   .copyright {
     gap: 17rem;
