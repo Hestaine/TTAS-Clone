@@ -17,9 +17,11 @@
 @keyframes wave {
   from {
     transform: rotateX(360deg);
+    /* transform: skew(360deg); */
   }
   to {
     transform: rotateX(0);
+    /* transform: skew(0); */
   }
 }
 @keyframes slidein {
@@ -265,8 +267,8 @@ nav {
   perspective: 1000px;
   transform-origin: center;
   background: #7557fc;
-  transform: rotateX(45deg);
-  animation: wave 3s infinite both;
+  transform: skew(45deg);
+  /* animation: wave 3s infinite both; */
 }
 .text-1 {
   color: #fff;
