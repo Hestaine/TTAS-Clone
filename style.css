@@ -275,6 +275,7 @@ nav {
   font-weight: 400;
   text-align: center;
   line-height: 1.5rem;
+  animation: slidein 1s;
 }
 .college2 {
   gap: 2rem;
@@ -409,6 +410,7 @@ nav {
   font-size: 1.3rem;
   font-weight: 700;
   text-align: center;
+  animation: slidein 1s;
 }
 .head5 {
   gap: 0.5rem;
@@ -486,25 +488,22 @@ nav {
   flex-direction: column;
 }
 .head9 {
+  width: 21rem;
+  gap: 0.5rem;
   color: #fff;
-  font-size: 2.5em;
+  display: inline;
   text-align: center;
-  top: 2pc;
-  left: 1pc;
-  right: 1pc;
-  display: block;
-  gap: 0px;
+  font-size: 2rem;
 }
 .color1 {
   color: #000;
 }
 .head10 {
+  gap: 1rem;
   color: #fff;
-  font-size: 2.5em;
-  top: 23pc;
-  left: 1pc;
-  display: flex;
-  gap: 10px;
+  font-size: 2.5rem;
+  text-align: center;
+  display: inline;
 }
 .line1 {
   color: #fff;
@@ -512,29 +511,15 @@ nav {
   margin-left: 2pc;
 }
 .line1 li {
-  font-size: 1.5em;
-  margin-left: 1pc;
-  margin-right: 1pc;
-  padding: 1pc;
+  font-size: 1.4rem;
+  padding: 1rem;
 }
 .head11 {
+  gap: 1rem;
   color: #fff;
-  font-size: 2.5em;
-  top: 40pc;
-  left: 1pc;
-  display: flex;
-  gap: 10px;
-}
-.line2 {
-  color: #fff;
-  top: 45pc;
-  margin-left: 2pc;
-}
-.line2 li {
-  font-size: 1.5em;
-  margin-left: 1pc;
-  margin-right: 1pc;
-  padding: 1pc;
+  font-size: 2.5rem;
+  text-align: center;
+  display: inline;
 }
 .text-7 {
   color: #fff;
