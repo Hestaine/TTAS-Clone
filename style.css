@@ -266,7 +266,7 @@ nav {
   transform-origin: center;
   background: #7557fc;
   transform: rotateX(45deg);
-  animation: wave 3s infinite ease-in-out;
+  animation: wave 3s infinite both;
 }
 .text-1 {
   color: #fff;
