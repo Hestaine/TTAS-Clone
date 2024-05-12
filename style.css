@@ -284,10 +284,11 @@ nav {
 }
 .head2 {
   gap: 0.5rem;
-  width: 19rem;
+  width: 20rem;
   color: #fff;
   font-size: 2rem;
   text-align: center;
+  /* flex-direction: row; */
   display: inline-flex;
 }
 .color {
