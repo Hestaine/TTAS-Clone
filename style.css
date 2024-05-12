@@ -486,6 +486,46 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  position: relative;
+  padding-bottom: 22rem;
+}
+.box5 {
+  bottom: 0;
+  width: 300px;
+  height: 300px;
+  color: #fff;
+  max-width: 100%;
+  overflow: scroll;
+  position: absolute;
+  background: #fff;
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+  transform-origin: center;
+  animation: rotate5 2s infinite both;
+}
+.box6 {
+  bottom: 0.6rem;
+  width: 200px;
+  height: 260px;
+  max-width: 100%;
+  overflow: scroll;
+  position: absolute;
+  background: #7557fc;
+  animation: rotate6 2s infinite both;
+  clip-path: polygon(100% 0%, 29% 51%, 100% 100%, 66% 100%, 0% 50%, 67% 1%);
 }
 .head9 {
   width: 21rem;
@@ -523,73 +563,17 @@ nav {
 }
 .text-7 {
   color: #fff;
-  font-size: 2.1em;
+  text-indent: 20px;
+  font-size: 1.3em;
   font-weight: 500;
-  padding-top: 70pc;
-  margin-left: 1pc;
-  margin-right: 1pc;
   text-align: center;
-  opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s, transform 0.5s;
 }
-.text-7.active {
+/* .text-7.active {
   opacity: 1;
   transform: translateY(0);
-}
-.box5 {
-  background: #fff;
-  color: #fff;
-  overflow: scroll;
-  max-width: 100%;
-  height: 300px;
-  width: 300px;
-  clip-path: polygon(
-    0% 15%,
-    15% 15%,
-    15% 0%,
-    85% 0%,
-    85% 15%,
-    100% 15%,
-    100% 85%,
-    85% 85%,
-    85% 100%,
-    15% 100%,
-    15% 85%,
-    0% 85%
-  );
-  top: 87pc;
-  left: 20pc;
-  right: 2pc;
-  animation-name: rotate5;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: both;
-  transform-origin: center;
-}
-.box6 {
-  background: #7557fc;
-  color: #fff;
-  overflow: scroll;
-  max-width: 100%;
-  height: 260px;
-  width: 200px;
-  clip-path: polygon(100% 0%, 29% 51%, 100% 100%, 66% 100%, 0% 50%, 67% 1%);
-  top: 88.2pc;
-  left: 23pc;
-  animation-name: rotate6;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: both;
-}
-.footer {
-  background: #000;
-  height: 60vh;
-}
-.college6 {
-  display: flex;
-  flex-direction: column;
-}
+} */
 .box7 {
   background: #7557fc;
   color: #fff;
@@ -616,29 +600,63 @@ nav {
   animation-iteration-count: infinite;
   animation-timing-function: both;
 }
+.footer {
+  display: flex;
+  padding: 3rem 0;
+  background: #000;
+}
+.college6 {
+  width: 100%;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .text-8 {
   color: #fff;
-  font-size: 2.1em;
-  font-weight: 500;
-  padding-top: 30pc;
-  margin-left: 1pc;
-  margin-right: 1pc;
-  display: flex;
-  gap: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  animation: slidein 1s;
+}
+.text-9 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  animation: slidein 1s;
+}
+.text-10 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  animation: slidein 1s;
 }
 .call {
   color: #7557fc;
+  text-decoration: none;
 }
 .head12 {
+  gap: 1rem;
   color: #fff;
-  font-size: 2.5em;
-  top: 40pc;
-  left: 1pc;
+  font-size: 2.5rem;
+  text-align: center;
+  display: inline;
 }
 .icon {
-  display: flex;
-  flex-direction: column;
   gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.copyright {
+  gap: 4rem;
+  display: flex;
 }
 .mini-icon {
   color: #fff;
@@ -647,26 +665,6 @@ nav {
 .mini-icon:hover {
   color: #7557fc;
   transition: transform 3s ease-in;
-}
-.text-9 {
-  color: #fff;
-  font-size: 2.1em;
-  font-weight: 500;
-  padding-top: 60pc;
-  margin-left: 1pc;
-  margin-right: 1pc;
-  display: flex;
-  gap: 10px;
-}
-.text-10 {
-  color: #fff;
-  font-size: 2.1em;
-  font-weight: 500;
-  padding-top: 70pc;
-  margin-left: 1pc;
-  margin-right: 1pc;
-  display: flex;
-  gap: 10px;
 }
 /* Styles for phones
 @media only screen and (max-width: 767px) {
