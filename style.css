@@ -22,7 +22,7 @@
     transform: rotateX(0);
   }
 }
-@keyframes slideup {
+@keyframes slidein {
   from {
     transform: translateX(-500px);
   }
@@ -157,7 +157,7 @@ nav {
   animation: turn 2s infinite;
 }
 .head {
-  animation: slideup 1s 0s 1;
+  animation: slidein 1s 0s 1;
   color: #fff;
   font-size: 1.5em;
   font-weight: 300;
@@ -351,7 +351,6 @@ nav {
   gap: 5rem;
   display: flex;
   padding: 2.5rem 0;
-  background: #000;
   flex-direction: column;
   background-color: #fff;
 }
@@ -360,6 +359,42 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  position: relative;
+  overflow-x: hidden;
+}
+.box3 {
+  bottom: 0;
+  width: 43.75rem;
+  height: 43.75rem;
+  max-width: 100%;
+  overflow: scroll;
+  position: absolute;
+  background: #7557fc;
+  transform-origin: center;
+  clip-path: circle(50px at 30%);
+  animation: rotate3 2s infinite both;
+}
+.box4 {
+  bottom: 13rem;
+  height: 18.75rem;
+  width: 18.75rem;
+  max-width: 100%;
+  overflow: scroll;
+  position: absolute;
+  background: #000;
+  clip-path: circle(20%);
+  animation: rotate4 2s infinite both;
+}
+.heads1 {
+  width: 21rem;
+  display: flex;
+  color: #000;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 .head4 {
   width: 21rem;
@@ -404,80 +439,50 @@ nav {
   animation: slidein 1s;
 }
 .head7 {
+  gap: 0.5rem;
   color: #000;
-  font-size: 3em;
-  top: 60pc;
-  left: 5pc;
-  display: flex;
-  gap: 10px;
+  font-size: 2.5rem;
+  text-align: center;
+  display: inline-flex;
 }
 .text-5 {
   color: #000;
-  font-size: 1.5em;
-  font-weight: 400;
-  padding-top: 8pc;
-  margin-left: 1pc;
-  margin-right: 1pc;
+  font-size: 1.3rem;
+  font-weight: 700;
   text-align: center;
   animation: slidein 1s;
-}
-.head8 {
-  color: #000;
-  font-size: 3em;
-  top: 79pc;
-  left: 5pc;
-  display: flex;
-  gap: 10px;
 }
 .text-6 {
   color: #000;
-  font-size: 1.5em;
-  font-weight: 400;
-  padding-top: 8pc;
-  margin-left: 1pc;
-  margin-right: 1pc;
+  font-size: 1.3rem;
+  font-weight: 700;
   text-align: center;
   animation: slidein 1s;
 }
-.box3 {
-  background: #7557fc;
-  color: #fff;
-  overflow: scroll;
-  max-width: 100%;
-  height: 700px;
-  width: 700px;
-  clip-path: circle(50px at 30%);
-  top: 85pc;
-  left: 8pc;
-  animation: rotate3 2s infinite both;
-  transform-origin: center;
+.text-line {
+  width: 90vw;
+  border: 1px solid rgba(0, 0, 0, 0.8);
 }
-.box4 {
-  background: #000;
-  color: #fff;
-  overflow: scroll;
-  max-width: 100%;
-  height: 300px;
-  width: 300px;
-  clip-path: circle(20%);
-  top: 97pc;
-  left: 21pc;
-  animation: rotate4 2s infinite both;
-}
-.heads1 {
-  display: inline;
-  width: 3rem;
+.head8 {
+  width: 21rem;
+  gap: 0.5rem;
   color: #000;
-  font-size: 1.2em;
-  font-weight: 700;
-  margin: 0 0.4rem;
+  display: inline;
+  text-align: center;
+  font-size: 2rem;
 }
 .section3 {
+  gap: 5rem;
+  display: flex;
+  padding: 2.5rem 0;
+  position: relative;
+  flex-direction: column;
   background-color: #7557fc;
-  height: 90vh;
 }
 .college5 {
+  gap: 2rem;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 .head9 {
